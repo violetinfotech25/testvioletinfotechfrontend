@@ -1,5 +1,6 @@
 import { createChatBotMessage } from "react-chatbot-kit";
 import WebsiteOptionsWidget from "../components/widgets/WebsiteOptionsWidget";
+import PackagesWidget from "../components/widgets/PackagesWidget";
 
 const config = {
   botName: "SupportBot",
@@ -12,6 +13,10 @@ const config = {
       widgetFunc: (props: any) => <WebsiteOptionsWidget {...props} />,
       props: {},
       mapStateToProps: [],
+    },
+    {
+      widgetName: "packagesWidget",
+      widgetFunc: (props: any) => <PackagesWidget {...props} />,
     },
   ],
 };

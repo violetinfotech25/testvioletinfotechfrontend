@@ -7,85 +7,161 @@ class ActionProvider {
     this.setState = setStateFunc;
   }
 
+  // Helper to add messages
+  addMessage(message: any) {
+    this.setState((prevState: any) => ({
+      ...prevState,
+      messages: [...prevState.messages, message],
+    }));
+  }
+
+  // Greetings
   greet() {
-    const message = this.createChatBotMessage("Hi! How can I help you?");
-    this.setState((prevState: any) => ({
-      ...prevState,
-      messages: [...prevState.messages, message],
-    }));
-  }
-
-  showWebsiteOptions() {
     const message = this.createChatBotMessage(
-      "Please choose the type of website you'd like to know about:",
-      {
-        widget: "websiteOptionsWidget" // Define this widget to show buttons/options
-      }
+      "👋 Welcome to Violet Infotech! How can I help you today?"
     );
-    this.setState((prevState: any) => ({
-      ...prevState,
-      messages: [...prevState.messages, message],
-    }));
+    this.addMessage(message);
   }
 
-  handleOption1() { // Static website
-    const message1 = this.createChatBotMessage("You chose Static website.");
-    const message2 = this.createChatBotMessage(
-      "A static website is a simple website consisting of fixed content, usually HTML, CSS, and images."
-    );
-    const message3 = this.createChatBotMessage(
-      "Our Static Website Package includes:\n- Up to 5 pages\n- Responsive design\n- Basic SEO\n- Deployment & hosting setup"
-    );
-
-    this.setState((prevState: any) => ({
-      ...prevState,
-      messages: [...prevState.messages, message1, message2, message3],
-    }));
+  // Website Options
+  showWebsiteOptions() {
+    const message = this.createChatBotMessage("We offer different types of websites:", {
+      widget: "websiteOptionsWidget",
+    });
+    this.addMessage(message);
   }
 
-  handleOption2() { // Dynamic website
-    const message1 = this.createChatBotMessage("You chose Dynamic website.");
-    const message2 = this.createChatBotMessage(
-      "Dynamic websites are interactive and can change content based on user interactions or backend data."
-    );
-    const message3 = this.createChatBotMessage(
-      "Our Dynamic Website Package includes:\n- CMS integration\n- User authentication\n- Database connectivity\n- Custom features"
-    );
-
-    this.setState((prevState: any) => ({
-      ...prevState,
-      messages: [...prevState.messages, message1, message2, message3],
-    }));
+  // Packages
+  showPackages() {
+    this.showPackagesDynamic(); // Call dynamic package widget
   }
 
-  handleOption3() { // E-commerce website
-    const message1 = this.createChatBotMessage("You chose E-commerce website.");
-    const message2 = this.createChatBotMessage(
-      "E-commerce websites allow you to sell products or services online with secure payment gateways."
-    );
-    const message3 = this.createChatBotMessage(
-      "Our E-commerce Package includes:\n- Product catalog\n- Shopping cart\n- Payment gateway integration\n- Order tracking"
-    );
+  showPackagesDynamic(prevChoice?: string) {
+    let options;
 
-    this.setState((prevState: any) => ({
-      ...prevState,
-      messages: [...prevState.messages, message1, message2, message3],
-    }));
+    if (prevChoice === "Website") {
+      options = [
+        { label: "Static Website", handler: () => this.handleOption1() },
+        { label: "Dynamic Website", handler: () => this.handleOption2() },
+        { label: "E-commerce Website", handler: () => this.handleOption3() },
+        { label: "Portfolio Website", handler: () => this.handleOption4() },
+      ];
+    } else if (prevChoice === "Branding") {
+      options = [
+        { label: "Branding Package", handler: () => this.handlePackage2() },
+      ];
+    } else if (prevChoice === "Digital Marketing") {
+      options = [
+        { label: "Digital Marketing Package", handler: () => this.handlePackage3() },
+      ];
+    } else {
+      // Default options
+      options = [
+        { label: "Website Package", handler: () => this.handlePackage1() },
+        { label: "Branding Package", handler: () => this.handlePackage2() },
+        { label: "Digital Marketing Package", handler: () => this.handlePackage3() },
+        { label: "Combo Package", handler: () => this.handlePackage4() },
+      ];
+    }
+
+    const message = this.createChatBotMessage("📦 Please choose a package:", {
+      widget: "packagesWidget",
+      payload: { options },
+    });
+
+    this.addMessage(message);
   }
 
-  handleOption4() { // Portfolio website
-    const message1 = this.createChatBotMessage("You chose Portfolio website.");
-    const message2 = this.createChatBotMessage(
-      "Portfolio websites showcase your work and achievements, great for freelancers and creatives."
-    );
-    const message3 = this.createChatBotMessage(
-      "Our Portfolio Package includes:\n- Project galleries\n- About & contact pages\n- Responsive design\n- Social media integration"
-    );
+  // =========================
+  // Website Handlers
+  // =========================
 
-    this.setState((prevState: any) => ({
-      ...prevState,
-      messages: [...prevState.messages, message1, message2, message3],
-    }));
+  handleOption1() {
+    const messages = [
+      this.createChatBotMessage("📌 Static Website"),
+      this.createChatBotMessage(
+        "A static website is simple and consists of fixed content."
+      ),
+      this.createChatBotMessage(
+        "✨ Package includes: Up to 5 pages, responsive design, basic SEO, hosting setup."
+      ),
+      this.createChatBotMessage("💰 Starting at ₹4,999"),
+    ];
+    messages.forEach((msg) => this.addMessage(msg));
+  }
+
+  handleOption2() {
+    const messages = [
+      this.createChatBotMessage("📌 Dynamic Website"),
+      this.createChatBotMessage(
+        "Dynamic websites are interactive and change content based on user interaction or backend data."
+      ),
+      this.createChatBotMessage(
+        "✨ Package includes: CMS integration, authentication, database connectivity, custom features."
+      ),
+      this.createChatBotMessage("💰 Starting at ₹9,999"),
+    ];
+    messages.forEach((msg) => this.addMessage(msg));
+  }
+
+  handleOption3() {
+    const messages = [
+      this.createChatBotMessage("📌 E-commerce Website"),
+      this.createChatBotMessage(
+        "E-commerce websites allow you to sell products/services online."
+      ),
+      this.createChatBotMessage(
+        "✨ Package includes: Product catalog, shopping cart, payment gateway, order tracking."
+      ),
+      this.createChatBotMessage("💰 Starting at ₹14,999"),
+    ];
+    messages.forEach((msg) => this.addMessage(msg));
+  }
+
+  handleOption4() {
+    const messages = [
+      this.createChatBotMessage("📌 Portfolio Website"),
+      this.createChatBotMessage(
+        "Portfolio websites showcase your work and achievements."
+      ),
+      this.createChatBotMessage(
+        "✨ Package includes: Project galleries, about & contact pages, responsive design, social media links."
+      ),
+      this.createChatBotMessage("💰 Starting at ₹6,999"),
+    ];
+    messages.forEach((msg) => this.addMessage(msg));
+  }
+
+  // =========================
+  // Package Handlers
+  // =========================
+
+  handlePackage1() {
+    const message = this.createChatBotMessage(
+      "📦 Website Package: Includes Static, Dynamic, E-commerce, and Portfolio websites tailored to your needs."
+    );
+    this.addMessage(message);
+  }
+
+  handlePackage2() {
+    const message = this.createChatBotMessage(
+      "🎨 Branding Package: Logo design, color palette, typography, and brand guidelines."
+    );
+    this.addMessage(message);
+  }
+
+  handlePackage3() {
+    const message = this.createChatBotMessage(
+      "📢 Digital Marketing Package: SEO, social media management, ads, and content marketing."
+    );
+    this.addMessage(message);
+  }
+
+  handlePackage4() {
+    const message = this.createChatBotMessage(
+      "💎 Combo Package: A complete bundle of Website + Branding + Digital Marketing at discounted rates."
+    );
+    this.addMessage(message);
   }
 }
 
