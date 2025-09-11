@@ -126,7 +126,7 @@ const Branding: React.FC = () => {
       gallery: [Label1, Label2, Label3, Label2, Label1, Label3],
     },
     {
-      title: 'Banners',
+      title: 'Welcome Pack',
       details: [
         {
           heading: 'What We Do',
@@ -145,7 +145,7 @@ const Branding: React.FC = () => {
       gallery: [welcome1, welcome1, welcome1, welcome1, welcome1, welcome1],
     },
     {
-      title: 'Welcome Pack',
+      title: 'Banners',
       details: [
         {
           heading: 'What We Do',
