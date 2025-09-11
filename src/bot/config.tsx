@@ -17,6 +17,8 @@ const config = {
     {
       widgetName: "packagesWidget",
       widgetFunc: (props: any) => <PackagesWidget {...props} />,
+      props: {},
+      mapStateToProps: [],  // Add this line to fix the type error
     },
   ],
 };

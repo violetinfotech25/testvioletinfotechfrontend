@@ -206,7 +206,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       <section className="seo-company-banner">
         <div className="seo-company-wrapper">
           <div className="seo-company-text">
-            <h2>An SEO Marketing Company That Gets It</h2>
+            <h2>Search Engine Optimization Services</h2>
             <p>
               Let’s face it. You know what you need but you just don’t know how to get it.
               Our SEO specialists hear that over and over from SEO clients who contact Thrive Internet Marketing Agency.
