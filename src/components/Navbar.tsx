@@ -1,18 +1,8 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/image/logo/L-5.png';
 import '../assets/css/navbar.css';
 
-const digitalMarketingItems = [
-  { name: 'Online Marketing', url: '/digital-marketing' },  
-  { name: 'SEO Services Overview', url: '/digital-marketing/SEO-Service' },
-  { name: 'Internet Marketing Services', url: '/digital-marketing/internet-marketing-services' },
-  { name: 'Content Marketing Services', url: '/digital-marketing/Content-Marketing-Service' },
-];
-
 const Navbar = () => {
-  const [showDropdown, setShowDropdown] = useState(false);
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
       <div className="container-fluid d-flex justify-content-between align-items-center">
@@ -45,33 +35,9 @@ const Navbar = () => {
               <Link className="nav-link" to="/about">About</Link>
             </li>
 
-            <li
-              className={`nav-item dropdown ${showDropdown ? 'show' : ''}`}
-              onMouseEnter={() => setShowDropdown(true)}
-              onMouseLeave={() => setShowDropdown(false)}
-            >
-              <Link
-                className="nav-link dropdown-toggle"
-                to="/digital-marketing"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded={showDropdown ? 'true' : 'false'}
-              >
-                Digital Marketing
-              </Link>
-              <ul
-                className={`dropdown-menu ${showDropdown ? 'show' : ''}`}
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                {digitalMarketingItems.map((item, idx) => (
-                  <li key={idx}>
-                    <Link className="dropdown-item" to={item.url}>
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+            {/* Dropdown removed */}
+            <li className="nav-item">
+              <Link className="nav-link" to="/digital-marketing">Digital Marketing</Link>
             </li>
 
             <li className="nav-item">

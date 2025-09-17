@@ -20,6 +20,7 @@ import banner2 from '../assets/image/branding/gallery/b-2.png';
 import banner3 from '../assets/image/branding/gallery/b-3.png';
 import banner4 from '../assets/image/branding/gallery/b-4.jpg';
 import welcome1 from '../assets/image/branding/gallery/wp-1.png';
+import welcome2 from '../assets/image/branding/gallery/wp-2.png';
 
 interface Detail {
   heading: string;
@@ -130,19 +131,19 @@ const Branding: React.FC = () => {
       details: [
         {
           heading: 'What We Do',
-          content: 'We create promotional banners for indoor and outdoor use, suitable for events, exhibitions, and store promotions.',
+          content: 'We create promotional welcome kit for company use, suitable for events, exhibitions, and store promotions.',
         },
         {
           heading: 'How We Do It',
-          content: 'We use high-resolution images, bold typography, and durable materials to design and print banners that grab attention.',
+          content: 'We use high-resolution images, bold typography, and durable materials to design and print meterials that grab attention.',
         },
         {
           heading: 'What Will Happen',
-          content: 'Your message will be clearly communicated to a large audience, boosting footfall and engagement.',
+          content: 'Your message will be clearly communicated to a large audience, boosting your employees and engagement.',
         },
       ],
-      image: welcome1,
-      gallery: [welcome1, welcome1, welcome1, welcome1, welcome1, welcome1],
+      image: welcome2,
+      gallery: [welcome1, welcome2, welcome1, welcome1, welcome1, welcome1],
     },
     {
       title: 'Banners',
@@ -157,7 +158,7 @@ const Branding: React.FC = () => {
         },
         {
           heading: 'What Will Happen',
-          content: 'Your message will be clearly communicated to a large audience, boosting footfall and engagement.',
+          content: 'Your message will be clearly communicated to a large audience, boosting and engagement.',
         },
       ],
       image: banner4,

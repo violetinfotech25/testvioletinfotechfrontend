@@ -76,8 +76,8 @@ const Digitalmarketingpg = () => {
         </div>
         <div className="dm-flex"> 
           <div className="dm-text">
-            <h1>Digital Marketing</h1>
-            <p>At Violet Infotech, we believe Digital Marketing is more than just ads and hashtags—it’s a strategic approach to connect, engage, and convert your ideal audience using the power of digital media. Whether you're looking to increase traffic, generate leads, or boost brand awareness, we craft tailored strategies that deliver measurable results and real ROI.</p>
+            <h1>Best Digital Marketing company in Coimbatore</h1>
+            <p> Powered by purpose, Violet infotech doesn’t just optimize, we also engineer digital dominance. As a top digital marketing company in Coimbatore, We combined innovative thinking and strategic precision to win prospects and build results-driven SEO plans. With most trusted SEO services in Coimbatore, We expand reach and sharpen impact, attract engaged prospects and turn every click into loyal, revenue-generating customers. Are you Ready to rank higher? Build dreams with the #No.1 SEO experts who turn strategy into success.</p>
           </div>
           <div className="dm-video">
             <iframe
@@ -114,17 +114,18 @@ const Digitalmarketingpg = () => {
   <div className="ims-container">
     {/* Left Text */}
     <div className="ims-text">
-      <h2>Website Design or Redesign</h2>
+      <h2>Search engine optimization</h2>
       <p>
+       Want your brand to shine brighter on the digital stage? At Violet Infotech, we provide powerful SEO services in Coimbatore tailored to put your business at the top of search results. Our team of experts specializes in everything from on-page enhancements to off-page strategies, including tailored solutions for local, national, and e-commerce SEO. With data-driven insights and innovative approaches, we help your business climb search rankings, attract the right audience, and maximize conversions. With Violet Infotech, you don’t just compete—you lead the way.
+      </p>
+      {/* <p>
         Your website should be the central hub that connects, unifies and amplifies all your online marketing and advertising activities. Most of your online campaigns will link to landing pages on your website.
       </p>
       <p>
         Your website should be the central hub that connects, unifies and amplifies all your online marketing and advertising activities. Most of your online campaigns will link to landing pages on your website.
-      </p>
-      <p>
-        Your website should be the central hub that connects, unifies and amplifies all your online marketing and advertising activities. Most of your online campaigns will link to landing pages on your website.
-      </p>
-      <Link to="/web-design"><button className="SEO-btn1">WEB DESIGN - LEARN MORE</button></Link>
+      </p> */}
+      <Link to="/digital-marketing/SEO-Service"><button className="SEO-btn1">SEO - LEARN MORE</button></Link>
+      {/* <Link to="/web-design"><button className="SEO-btn1">WEB DESIGN - LEARN MORE</button></Link> */}
     </div>
 
     {/* Right Image */}
@@ -140,14 +141,19 @@ const Digitalmarketingpg = () => {
          <section id='overview' className='SEO-overview'>
   <div className="SEO-inner">
     <div>
-      <h2>Search Engine Optimization (SEO)</h2>
-      <p>Get found where it matters—on the first page of Google. Our SEO strategies are designed to improve your search rankings, increase organic traffic, and ensure long-term visibility. We focus on both on-page and off-page SEO, using white-hat techniques and keyword research backed by real-time data.
-</p><p>Keyword Research & Strategy</p>
-<p>Technical SEO (Site Speed, Mobile Optimization, Schema)</p>
-<p>Local SEO (Google My Business, Local Listings)</p>
-<p>Link Building & Authority Growth</p>
-<p>SEO Audits & Competitor Analysis</p>
-      <Link to="/digital-marketing/SEO-Service"><button className="SEO-btn1">SEO - LEARN MORE</button></Link>
+      <h2>Why Choose Us?</h2>
+      <p>Violet Infotech isn’t just a digital marketing agency in Coimbatore—it’s your future-ready growth partner. As a forward-thinking IT & Digital Solutions company, we are committed to ethical strategies, real-time results, and smart technology that keep your brand one step ahead of competitors.
+</p>
+<p> <strong>Experienced Professionals</strong> <br />With years of proven expertise, our SEO specialists stay updated with the latest trends to keep your business competitive, visible, and successful in search rankings—driving consistent digital growth and long-term success.
+</p>
+<p><strong>Customized Strategies</strong> <br />Our team designs tailored SEO strategies aligned with your business goals to maximize ROI, boost online visibility, and ensure you stay ahead of the competition with impactful, personalized solutions.
+</p>
+<p><strong>Proven Record of Success</strong><br />We are trusted for our consistent track record of delivering measurable results. By empowering clients to achieve their goals, we help elevate brands with sustainable growth through strategic, result-focused execution.
+</p>
+<p> <strong>Transparent & Collaborative Process</strong><br /> At Violet Infotech, we believe in complete transparency and collaboration. We keep you informed at every stage of the SEO journey, aligning strategies with your objectives to ensure measurable success and clarity at every step.
+</p>
+{/* <p>SEO Audits & Competitor Analysis</p> */}
+      {/* <Link to="/digital-marketing/SEO-Service"><button className="SEO-btn1">SEO - LEARN MORE</button></Link> */}
     </div>
     <div>
       <img src={image2} alt="" />
@@ -160,15 +166,23 @@ const Digitalmarketingpg = () => {
             <div className="ims-container">
               {/* Left Text */}
               <div className="ims-text">
-                <h2>Search Engine Advertising</h2>
+                <h2>What We Do</h2>
                 <p>
-                  For most businesses, highly targeted search engine ads that link to persuasive website landing pages can rapidly build website traffic that converts into new leads and sales. 
+                  At Violet Infotech, we empower businesses to grow, connect, and succeed in the digital world. By combining innovation, data-driven insights, and advanced technology, we deliver end-to-end solutions that help brands establish a strong online presence, boost visibility, and achieve measurable results. 
+                </p>
+                <p><strong>Search Engine Optimization (SEO)</strong> <br />We optimize your website with cutting-edge SEO strategies—on-page, off-page, local, and e-commerce SEO—to increase visibility, improve rankings, and drive quality traffic.
                 </p>
                 <p>
-                  When combined with rigorous attention to the analytics associated with your search engine advertising, we can determine which ads are working best in terms of converting visitors into leads and buyers, and then continuously hone your ads over time, resulting in an ever-increasing stream of new leads, new sales, and improved ROI for your marketing dollar.
+                  <strong>Web Design & Development</strong> <br /> We create responsive, user-friendly, and visually stunning websites that deliver seamless user experiences and support your business growth. 
                 </p>
                 <p>
-                  Your website should be the central hub that connects, unifies and amplifies all your online marketing and advertising activities. Most of your online campaigns will link to landing pages on your website. 
+                  <strong>Branding & Creative Solutions</strong> <br />Our creative team crafts powerful branding strategies, logos, and digital assets that help you stand out and leave a lasting impression. 
+                </p>
+                <p>
+                  <strong>E-Commerce Solutions</strong> <br />We build scalable, secure, and customized e-commerce platforms that streamline sales and deliver engaging shopping experiences.
+                </p>
+                <p>
+                  <strong>Data-Driven Insights</strong> <br />Through analytics and reporting, we provide valuable insights to refine strategies, monitor performance, and ensure long-term success. 
                 </p>
                 
                 
@@ -190,16 +204,17 @@ const Digitalmarketingpg = () => {
   <div className="seasec-container">
     {/* Left Text */}
     <div className="seasec-text">
-      <h2 style={{ textShadow: 'none' }}>Social Media Marketing & Advertising</h2>
+      <h2 style={{ textShadow: 'none' }}>What We Do – Content Marketing</h2>
       <p>
-        Turn followers into customers with scroll-stopping social content.
-We build your brand’s voice on social platforms like Instagram, Facebook, LinkedIn, and YouTube by creating consistent, engaging, and visually stunning content that speaks directly to your audience.</p>
-<p>Social Media Strategy & Planning</p>
-<p>Content Calendar Creation</p>
-<p>Creatives (Reels, Carousels, Infographics)</p>
-<p>Audience Targeting & Engagement</p>
-<p>Influencer Collaborations</p>
-<p> Social Media Ads (Meta Ads, Boosted Posts)</p>
+        At Violet Infotech, we create content that doesn’t just speak—it converts. Our content marketing services are designed to help your brand tell its story, build trust, and engage audiences across multiple platforms. By blending creativity with strategy, we ensure your content works as a powerful growth engine for your business.</p>
+<p><strong>Our Content Marketing Services include:</strong></p>
+<p><strong>Content Strategy & Planning</strong> – Data-driven strategies tailored to your audience and business goals.</p>
+<p><strong>Blog & Article Writing</strong> – High-quality, SEO-friendly blogs that drive organic traffic and authority.</p>
+<p><strong>Website & Landing Page Content</strong> – Engaging copy designed to boost conversions and enhance user experience.</p>
+<p><strong>Social Media Content</strong> – Creative posts, captions, and campaigns that spark conversations and brand engagement.</p>
+<p><strong>Video & Visual Content</strong> – Short videos, infographics, and creatives that capture attention instantly.</p>
+<p><strong>Email Marketing Content</strong> – Personalized email campaigns to nurture leads and increase customer loyalty.</p>
+<p>With Violet Infotech, your content doesn’t just fill pages—it delivers measurable impact, drives traffic, and positions your brand as an industry leader.</p>
       <button className="SEO-btn1" onClick={() => openModal("Contact Us")}>CONTACT AS</button>
     </div>
 
@@ -214,23 +229,24 @@ We build your brand’s voice on social platforms like Instagram, Facebook, Link
   <div className="contentmarketing-container">
     {/* Left Text */}
     <div className="contentmarketing-text">
-      <h2 style={{ textShadow: 'none' }}>Content Marketing</h2>
+      <h2 style={{ textShadow: 'none' }}>Violetinfotech Facts</h2>
       <p>
-        For most businesses, highly targeted search engine ads that link to persuasive website landing pages can rapidly build website traffic that converts into new leads and sales.
+        At violet infotech, we help businesses grow by making sure they’re seen where it matters most in online. With sapience- driven strategies and a hands- on approach of our platoon works to ameliorate your visibility and bring in the right followership.
       </p>
       <p>
-        Effective content, whether in the form of blog posts, downloadable reports and white papers, videos or other digital forms, can act as a powerful differentiator to build trust and respect for your expertise, thereby opening the door to new inquiries and sales. This is especially true for high-priced or potentially high-risk products and services.
+        As one of Coimbatore’s leading SEO experts and digital marketing company in coimbatore we apply slice- edge results and dependable strategies to 	Grow your online influence and ensure Growth that lasts.
       </p>
-      <br /><br />
       <p>
-        When combined with rigorous attention to the analytics associated with your search engine advertising, we can determine which ads are working best in terms of converting visitors into leads and buyers, and then continuously hone your ads over time, resulting in an ever-increasing stream of new leads, new sales, and improved ROI for your marketing dollar.
+        Driving results through data-driven strategies.
       </p>
-      <br />
       <p>
-        Your website should be the central hub that connects, unifies and amplifies all your online marketing and advertising activities. Most of your online campaigns will link to landing pages on your website.
+        Expertise in all aspects of digital marketing.
+      </p>
+      <p>
+        Delivering measurable ROI for our clients.
       </p>
 
-      <Link to="/digital-marketing/Content-Marketing-Service"><button className="SEO-btn1">Learn More</button></Link>
+      {/* <Link to="/digital-marketing/Content-Marketing-Service"><button className="SEO-btn1">Learn More</button></Link> */}
     </div>
 
     {/* Right Image */}
@@ -325,21 +341,21 @@ We design automated, personalized email journeys that turn cold leads into loyal
             </div>
           </section>
           <div className="thirdsec">
-                  Web Design & Internet Marketing Packages
+                  Our Services
           </div>
           <section className='websitebg'>
-                <div className='web-banner'>
+                {/* <div className='web-banner'>
                    <h5>We Suggest 3 Plans to Meet Your Needs & Budget</h5>
                    <p>We recommend that you consider one of the three website design and marketing plans below. They are designed to help you achieve a meaningful set of objectives based on your budget and goals.  Plans progress in impact from left to right. Pricing is based on the scope of your website and the depth of your online marketing objectives. </p>
                   <p>All plans can be customized to meet your unique needs. Contact us to learn more.</p>
                   <p>If your budget is limited, you can begin with the Web Pro package, and then implement the Online Marketer  plan at a later time, and then eventually implement the Social Media Master plan as phase 3 of your online marketing strategy.</p>
-                </div>
+                </div> */}
                 <div className='three-box'>
                    <div>
                       <img src="https://cdn-icons-png.flaticon.com/128/3474/3474360.png" alt="" />
-                      <h4 style={{fontSize: '28px'}}>Web Pro</h4>
-                      <p>This package is perfect for a business whose primary goal is to upgrade their website in order to build credibility, and to impress their viewers while laying a solid SEO foundation to help them get found via search engines.</p>
-                      <h4><u>FEATURES</u></h4>
+                      <h4 style={{fontSize: '28px'}}>On-page & Off page SEO</h4>
+                      <p>On-page SEO optimizes your site's content and structure, while off-page SEO enhances credibility through backlinks and social signals working together in boosting visibility, increasing traffic, and search engine rankings at the top.</p>
+                      {/* <h4><u>FEATURES</u></h4>
                       <h4>Website Foundation:</h4>
                       <ul style={{ listStyle: 'none' }}>
                         <li> Keyword research</li>
@@ -356,7 +372,7 @@ We design automated, personalized email journeys that turn cold leads into loyal
                         <li>Persuasive messaging</li>
                         <li> Image & background layering</li>
                         <li>Motion effects to engage viewers</li>
-                      </ul>
+                      </ul> */}
                    </div>
                    <div style={{
                       width: "80%",
@@ -365,9 +381,9 @@ We design automated, personalized email journeys that turn cold leads into loyal
                       transition: "transform 0.3s ease"
                     }}>
                       <img src="https://cdn-icons-png.flaticon.com/128/3234/3234841.png" alt="" />
-                      <h4 style={{fontSize: '28px'}}>Online Marketer</h4>
-                      <p>This package is perfect for a business whose primary goal is to upgrade their website in order to build credibility, and to impress their viewers while laying a solid SEO foundation to help them get found via search engines.</p>
-                      <h4><u>FEATURES</u></h4>
+                      <h4 style={{fontSize: '28px'}}>Local SEO</h4>
+                      <p>Local SEO boosts your businesses appearance in local “near me” searches by optimizing online presence and listings by helping to attract local customers, increase foot traffic, and dominate your area's search results by our service.</p>
+                      {/* <h4><u>FEATURES</u></h4>
                       <h4>Website Foundation:</h4>
                       <ul style={{ listStyle: 'none' }}>
                         <li> Keyword research</li>
@@ -384,13 +400,13 @@ We design automated, personalized email journeys that turn cold leads into loyal
                         <li>Persuasive messaging</li>
                         <li> Image & background layering</li>
                         <li>Motion effects to engage viewers</li>
-                      </ul>
+                      </ul> */}
                    </div>
                    <div>
                       <img src="https://cdn-icons-png.flaticon.com/128/11629/11629132.png" alt="" />
-                      <h4 style={{fontSize: '28px'}}>Social Media Master</h4>
-                      <p>This package is perfect for a business whose primary goal is to upgrade their website in order to build credibility, and to impress their viewers while laying a solid SEO foundation to help them get found via search engines.</p>
-                      <h4><u>FEATURES</u></h4>
+                      <h4 style={{fontSize: '28px'}}>Link Building</h4>
+                      <p>Boost your site's specialist with our moral interface building procedure by well planned to win higher quality backlinks, upgrade look motor rankings, and drive steady, focused on activity to your site with the offer assistance of our specialists.</p>
+                      {/* <h4><u>FEATURES</u></h4>
                       <h4>Website Foundation:</h4>
                       <ul style={{ listStyle: 'none' }}>
                         <li> Keyword research</li>
@@ -407,7 +423,7 @@ We design automated, personalized email journeys that turn cold leads into loyal
                         <li>Persuasive messaging</li>
                         <li> Image & background layering</li>
                         <li>Motion effects to engage viewers</li>
-                      </ul>
+                      </ul> */}
                    </div>
                 </div>
                 <div>
