@@ -21,7 +21,7 @@ import Contact from "./components/Contact";
 import Plans from "./components/Plans";
 import Websitegallery from "./components/websitegallery";
 import ChatBotComponent from "./components/ChatBotComponent";
-import Preloader from "./components/PreLoader";
+import Preloader from "./components/PageLoader";
 import logo from './assets/image/logo/LOGO 3.jpg';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
