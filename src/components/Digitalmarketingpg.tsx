@@ -74,7 +74,7 @@ const Digitalmarketingpg = () => {
             Philadelphia, Delaware, New Jersey Region & Beyond
             WITH OFFICES IN READING, ALLENTOWN & MALVERN, PA</p>
         </div>
-        <div className="dm-flex"> 
+        <div className="dm-flex container"> 
           <div className="dm-text">
             <h1>Best Digital Marketing company in Coimbatore</h1>
             <p> Powered by purpose, Violet infotech doesn’t just optimize, we also engineer digital dominance. As a top digital marketing company in Coimbatore, We combined innovative thinking and strategic precision to win prospects and build results-driven SEO plans. With most trusted SEO services in Coimbatore, We expand reach and sharpen impact, attract engaged prospects and turn every click into loyal, revenue-generating customers. Are you Ready to rank higher? Build dreams with the #No.1 SEO experts who turn strategy into success.</p>
