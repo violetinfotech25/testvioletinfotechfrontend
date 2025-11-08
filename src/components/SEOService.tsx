@@ -209,7 +209,7 @@ const handleSubmit = async (e: React.FormEvent) => {
     <div className="seo-company-text">
       <p>
         Let’s face it. You know what you need but you just don’t know how to get it.
-        Our SEO specialists hear that over and over from SEO clients who contact Thrive Internet Marketing Agency.
+        Our SEO specialists hear that over and over from SEO clients who contact Violet Infotech Internet Marketing Agency.
       </p>
       <p>You’re likely here because of one or more of the following reasons:</p>
       <ul>
@@ -269,7 +269,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       </div>
       <div className='container seo-ads'>
         <h3>You’ve Finally Found the Right SEO Agency With Answers</h3>
-        <p>Thrive has the SEO solutions you’ve been searching for. Don’t let another day go by where your competitors are looking down on you! It’s time to be discovered!</p>
+        <p>Violet Infotech has the SEO solutions you’ve been searching for. Don’t let another day go by where your competitors are looking down on you! It’s time to be discovered!</p>
         <button className="seo-banner-button2" onClick={() => openModal("Increase Your Leads")}>INCREASE YOUR LEADS</button>
       </div>
       {/* === Top Gradient Banner Section === */}
@@ -356,7 +356,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   <div className="methodology-intro">
     <p>The search landscape is constantly evolving. To help you stay ahead and agile, you need to choose the right SEO services tailored to your business’ needs, demands and target audience. Working with an SEO solutions expert is a smart move to achieve a robust online presence.</p>
-    <p>Thrive Internet Marketing Agency is a trusted SEO company that can help you gain a better ROI. We use a customized six-phase process to develop personalized SEO strategies that deliver results. Thrive’s Agile SEO methodology provides the framework.</p>
+    <p>Violet Infotech Internet Marketing Agency is a trusted SEO company that can help you gain a better ROI. We use a customized six-phase process to develop personalized SEO strategies that deliver results. Violet Infotech Agile SEO methodology provides the framework.</p>
   </div>
 
   <div className="methodology-steps">
@@ -366,8 +366,8 @@ const handleSubmit = async (e: React.FormEvent) => {
       { step: 3, title: "Strategize", color: "#A3B32C", text: "Once we’ve identified your marketing gaps and opportunities, our SEO experts create a 60-day strategic online marketing plan (SOMP). This includes your campaign goals, expected outcomes for each marketing channel, and estimated completion time. Our SEO team also identifies your conversion path and sets up your analytics tracking systems." },
       { step: 4, title: "Execute", color: "#C55C2F", text: "During this phase, we execute the SOMP. We optimize your web pages and blog posts with high-performing keywords, improve your site structure, manage your listings and create social media pages. Our SEO company also leverages A/B testing to improve your conversion rate." },
       { step: 5, title: "Measure", color: "#F1B241", text: "We monitor your SEO performance using analytics and tracking tools. This includes measuring traffic, rankings, and other campaign metrics. With this data, we provide regular reporting to ensure transparency in your SEO campaign performance." },
-      { step: 6, title: "Report", color: "#3D90A4", text: "We schedule monthly consultations and share reports so you can track your SEO progress. You will always have access to your campaign performance anytime through Thrive’s custom dashboard. Our SEO experts provide detailed insights and address questions or concerns during reporting." },
-      { step: 7, title: "Adjust", color: "#215275", text: "As part of our ongoing SEO efforts, we continually adjust our optimization strategies based on the latest algorithm updates and performance trends. Thrive’s SEO consultants recommend actionable items to improve your campaign and increase ROI." },
+      { step: 6, title: "Report", color: "#3D90A4", text: "We schedule monthly consultations and share reports so you can track your SEO progress. You will always have access to your campaign performance anytime through Violet Infotech’s custom dashboard. Our SEO experts provide detailed insights and address questions or concerns during reporting." },
+      { step: 7, title: "Adjust", color: "#215275", text: "As part of our ongoing SEO efforts, we continually adjust our optimization strategies based on the latest algorithm updates and performance trends. Violet Infotech’s SEO consultants recommend actionable items to improve your campaign and increase ROI." },
     ].map(({ step, title, color, text }) => (
       <div className="methodology-step" key={step}>
         <div className="methodology-icon" style={{ backgroundColor: color }}>
