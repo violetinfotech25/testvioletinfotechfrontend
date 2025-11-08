@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import logo from '../assets/image/logo/L-7.png';
+import logo from '../assets/image/logo/L-8.png';
 import '../assets/css/preloader.css';
 
 const Preloader: React.FC<{ loading: boolean }> = ({ loading }) => {

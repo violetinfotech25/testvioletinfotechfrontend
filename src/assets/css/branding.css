@@ -14,7 +14,7 @@
   text-align: center;
   margin-bottom: 60px;
   font-weight: bold;
-  color: #43937D;
+  color: #563c5c;
   position: relative;
   animation: slideDown 1s ease forwards;
 }
@@ -31,9 +31,9 @@
   box-shadow: 0 0 0 rgba(0, 0, 0, 0);
   transition: box-shadow 0.3s ease;
 }
-.branding-section:hover {
+/* .branding-section:hover {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-}
+} */
 
 /* Layout Control */
 .branding-section.left .branding-image {
@@ -74,7 +74,7 @@
 }
 .branding-content h2 {
   font-size: 2rem;
-  color: #43937D;
+  color: #563c5c;
   margin-bottom: 20px;
   font-weight: 700;
 }
@@ -96,7 +96,7 @@
 .branding-btn {
   margin-top: 20px;
   padding: 12px 28px;
-  background: #43937D;
+  background: #563c5c;
   color: white;
   border: none;
   border-radius: 8px;
@@ -107,9 +107,9 @@
   box-shadow: 0 4px 14px rgba(59, 130, 246, 0.4);
 }
 .branding-btn:hover {
-  background: linear-gradient(45deg, #3b82f6, #1e40af);
+  background: linear-gradient(45deg, #93689c, #563c5c);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 6px 18px #93689c;
 }
 
 /* Responsive Design */
@@ -206,7 +206,7 @@
 
 .branding-contact {
   text-align: center;
-  background-color: #357a6673;
+  background-color: #595f7246;
   padding: 60px 20px;
 }
 
@@ -216,7 +216,7 @@
 
 .branding-contact button {
   margin-top: 20px;
-  background-color: #43937D;
+  background-color: #563c5c;
   color: white;
   padding: 12px 25px;
   font-size: 16px;
@@ -227,7 +227,7 @@
 }
 
 .branding-contact button:hover {
-  background-color: #357a66;
+  background-color: #46324b;
 }
 
 .modal-overlay {

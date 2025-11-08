@@ -3,31 +3,48 @@
 }
 
 .about-hero {
-   background-image: url('image/about/banner.png');
-  background-size: cover; /* or contain depending on your design */
+  background-image: url('https://t4.ftcdn.net/jpg/05/08/80/19/360_F_508801991_UTsCAOorx25USitqonfRADueJlzyjhDq.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: rgb(255, 174, 0);
-  height: 300px; /* 👈 reduce this value as needed */
+  height: 300px; /* Desktop height */
   text-align: center;
-  padding: 20px; /* Optional: reduce padding too */
+  padding: 20px;
 }
 
 .about-hero h1 {
-  font-size: 42px;
+  font-size: 50px;
   margin-top: 50px;
   margin-bottom: 15px;
-  margin-left: 470px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-right: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: 800;
-  font-size: 50px;
 }
 
 .about-hero p {
-  font-size: 20px;
-  margin-left: 450px;
-  color: #d6f7ed;
   font-size: 25px;
+  margin-right: 80px;
+  color: #d6f7ed;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+  .about-hero {
+    height: 200px; /* Reduced height for smaller screens */
+    padding: 15px 10px; /* Reduced padding */
+  }
+
+  .about-hero h1 {
+    font-size: 28px; /* Smaller heading size */
+    margin-top: 30px; /* Less top margin */
+    margin-right: 10px; /* Less right margin */
+  }
+
+  .about-hero p {
+    font-size: 16px; /* Smaller paragraph text */
+    margin-right: 10px; /* Less right margin */
+  }
 }
 
 .container {
@@ -65,9 +82,9 @@
 
 .about-contact {
   text-align: center;
-  background-color: #357a66bd;
+  background-color: #595f7246;
   padding: 60px 20px;
-  color:white;
+  color:#563c5c;
 }
 
 .about-contact h2 {
@@ -76,7 +93,7 @@
 
 .about-contact button {
   margin-top: 20px;
-  background-color: #e91e63;
+  background-color: #563c5c;
   color: white;
   padding: 12px 25px;
   font-size: 16px;
@@ -87,7 +104,7 @@
 }
 
 .about-contact button:hover {
-  background-color: #357a66;
+  background-color: #432f47;
 }
 
 .about-achievements.centered {
@@ -274,7 +291,7 @@
 
 .what-we-do-section {
   padding: 60px 20px;
-  background-color: #3c8c77ad;
+  background-color: #595f7246;
 }
 
 .what-we-do-section .section-title {
@@ -282,7 +299,7 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 40px;
-  color: brown;
+  color: #563c5c;
 }
 
 .services-card-container {
@@ -306,7 +323,7 @@
 
 .service-title {
   font-size: 1.5rem;
-  color: #3c8c76;
+  color: #563c5c;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -383,7 +400,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  color: brown;
+  color: #563c5c;
   margin-top: -80px;
   margin-bottom: 40px;
 }
@@ -392,7 +409,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  color: brown;
+  color: #563c5c;
   margin-top: -80px;
   margin-bottom: 80px;
 }
@@ -401,7 +418,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  color: rgba(255, 0, 0, 0.795);
+  color: #563c5c;
   margin-top: -80px;
   margin-bottom: 60px;
 }
@@ -411,7 +428,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  color: rgba(255, 0, 0, 0.795);
+  color: #563c5c;
   margin-top: -80px;
   margin-bottom: 100px;
 }
@@ -420,7 +437,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  color: brown;
+  color: #563c5c;
   margin-top: -80px;
   margin-bottom: 30px;
 }
@@ -429,7 +446,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 800;
-  color: brown;
+  color: #563c5c;
   margin-top: -80px;
   margin-bottom: 60px;
 }

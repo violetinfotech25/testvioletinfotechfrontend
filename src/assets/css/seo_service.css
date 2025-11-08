@@ -12,7 +12,7 @@
   font-size: 42px;
   font-weight: 800;
   text-align: center;
-  background: #43937D;
+  background: #563c5c;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
@@ -80,7 +80,7 @@
 /* Button */
 .seo-button {
   margin-top: auto;
-  background-color: #4f46e5;
+  background-color: #563c5c;
   color: white;
   padding: 10px 18px;
   border: none;
@@ -91,7 +91,7 @@
 }
 
 .seo-button:hover {
-  background-color: #3730a3;
+  background-color: #595F72;
 }
 
 .seo-card {
@@ -119,7 +119,7 @@
   color: #333;
 }
 
-.seo-button {
+/* .seo-button {
   background-color: #007bff;
   color: white;
   padding: 8px 16px;
@@ -132,73 +132,11 @@
 
 .seo-button:hover {
   background-color: #0056b3;
-}
+} */
 
-.seo-company-banner {
-  background: #fff;
-  padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-.seo-company-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: auto;
-  gap: 40px;
-  align-items: center;seo-banner-button
-}
-
-.seo-company-text {
-  flex: 1 1 500px;
-}
-
-.seo-company-text h2 {
-  font-size: 30px;
-  font-weight: 700;
-  color: #43937D;
-  margin-bottom: 20px;
-  background:#43937D;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.seo-company-text p,
-.seo-company-text ul {
-  font-size: 16px;
-  color: #444;
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
-.seo-company-text ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.seo-company-text li {
-  margin-bottom: 8px;
-}
-
-.seo-banner-button {
-  background-color: #f7921e;
-  color: white;
-  padding: 12px 28px;
-  border: none;
-  font-weight: bold;
-  font-size: 16px;
-  border-radius: 30px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background 0.3s;
-}
-
-.seo-banner-button:hover {
-  background-color: #d97706;
-}
 
 .seo-banner-button2 {
-  background-color: #f7921e;
+  background-color: #563c5c;
   color: white;
   padding: 12px 28px;
   border: none;
@@ -211,39 +149,9 @@
 }
 
 .seo-banner-button2:hover {
-  background-color: #d97706;
+  background-color: #595F72;
 }
 
-.seo-company-image {
-  flex: 1 1 400px;
-  position: relative;
-}
-
-.seo-company-image img {
-  width: 100%;
-  border-radius: 16px;
-}
-
-.seo-company-icon {
-  position: absolute;
-  font-size: 36px;
-  background: #fff;
-  padding: 12px;
-  border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.seo-company-icon.green {
-  top: 10%;
-  left: 10%;
-  color: #3cb371;
-}
-
-.seo-company-icon.orange {
-  bottom: 15%;
-  left: 30%;
-  color: #f7921e;
-}
 
 .seo-ads {
   padding: 40px 20px;
@@ -253,7 +161,7 @@
 }
 
 .seo-top-intro {
-  background: linear-gradient(135deg, #43937D, #43937D);
+  background: linear-gradient(135deg, #595F72, #595F72);
   padding: 60px 20px;
   text-align: center;
   color: white;
@@ -280,51 +188,6 @@
   line-height: 1.6;
 }
 
-/* SEO Company Banner Section */
-.seo-company-banner {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-/* Individual SEO Card Box */
-.seo-company-box {
-  padding: 20px;
-  border-radius: 12px;
-  color: #fff;
-  transition: transform 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
-.seo-company-box h3 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.seo-company-box p {
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-/* Color Variants */
-.blue-box { background-color: #215275; }
-.sky-box { background-color: #1f6f8b; }
-.teal-box { background-color: #178582; }
-.green-box { background-color: #648f1d; }
-.orange-box { background-color: #c8631d; }
-.yellow-box { background-color: #e9b530; }
-
-/* Hover effect */
-.seo-company-box:hover {
-  transform: translateY(-5px);
-}
 
 /* Methodology Section */
 .seo-methodology {
@@ -343,7 +206,7 @@
 .methodology-header h2 {
   font-size: 32px;
   font-weight: 800;
-  color: #43937D;
+  color: #563c5c;
 }
 
 .methodology-header p {
@@ -353,7 +216,7 @@
 }
 
 .methodology-button {
-  background-color: #f6a61d;
+  background-color: #563c5c;
   color: #fff;
   border: none;
   padding: 8px 18px;
@@ -417,7 +280,7 @@
 .methodology-content h5 {
   font-size: 20px;
   margin: 0 0 10px 0;
-  color: #43937D;
+  color: #563c5c;
   font-weight: 750;
 }
 
@@ -540,4 +403,241 @@
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+
+.seo-company-banner {
+  padding: 60px 40px;
+  text-align: center;
+  /* background-color: #f8f9fa; */
+}
+
+.seo-company-title {
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  color: #563c5c;
+}
+
+.seo-company-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.seo-company-text {
+  flex: 1;
+  line-height: 1.7;
+  color: #333;
+  word-spacing: 1px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.seo-company-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.seo-company-text li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.seo-company-image {
+  flex: 1;
+  position: relative;
+  text-align: right;
+}
+
+.seo-company-image img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.seo-company-icon {
+  position: absolute;
+  font-size: 30px;
+}
+
+.seo-company-icon.green {
+  top: 10%;
+  left: 15%;
+}
+
+.seo-company-icon.orange {
+  bottom: 10%;
+  right: 10%;
+}
+
+.seo-banner-button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  background-color: #563c5c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.seo-banner-button:hover {
+  background-color: #595F72;
+}
+
+@media (max-width: 768px) {
+  .seo-company-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seo-company-image {
+    text-align: center;
+  }
+}
+
+
+/* Container for the Expertise Section */
+.seo-expertise-section {
+  padding: 60px 40px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+
+  /* CSS Grid with 3 columns on desktop, 2 on tablet, 1 on mobile */
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr; /* Make all rows equal height */
+}
+
+/* Responsive columns */
+@media (max-width: 960px) {
+  .seo-expertise-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .seo-expertise-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 40px 20px;
+  }
+}
+
+/* Individual Expertise Box - use Flexbox to fill height */
+.expertise-box {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+  margin-bottom: 20px;
+  height: 100%; /* Fill height of grid row */
+}
+
+.expertise-box:hover {
+  transform: translateY(-8px); /* lift on hover */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2); /* deeper shadow */
+}
+
+/* Heading inside box */
+.expertise-box h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Paragraph inside box */
+.expertise-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1; /* Take up remaining vertical space */
+}
+
+/* Color Variants for Boxes */
+.expertise-blue { background-color: #215275; }
+.expertise-sky { background-color: #1f6f8b; }
+.expertise-teal { background-color: #178582; }
+.expertise-green { background-color: #648f1d; }
+.expertise-orange { background-color: #c8631d; }
+.expertise-yellow { background-color: #e9b530; }
+
+/* Responsive Grid Layout for desktop/tablet/mobile */
+@media (min-width: 961px) {
+  .seo-expertise-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+  .seo-expertise-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 600px) {
+  .seo-expertise-section {
+    display: block;
+    padding: 40px 20px;
+    text-align: center;
+  }
+}
+
+.seo-cta-section {
+  background-color: #595f7246;
+  color: #563c5c;
+  text-align: center;
+  padding: 60px 20px;
+  margin-top: 60px;
+}
+
+.seo-cta-content h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.seo-cta-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seo-cta-button {
+  background-color: #563c5c;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 14px 36px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seo-cta-button:hover {
+  background-color: #46324b;
 }

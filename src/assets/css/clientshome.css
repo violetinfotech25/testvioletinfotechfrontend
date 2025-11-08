@@ -8,7 +8,7 @@
 .clients-heading {
   font-size: 28px;
   margin-bottom: 30px;
-  color: #b50318;
+  color: #bd0202;
   font-weight: 700;
   font-size: 45px;
 }
@@ -79,7 +79,7 @@
 }
 
 .learn-more {
-  background-color:  #43937D;
+  background-color:  #595F72;
   color: #fff;
   padding: 6px 14px;
   border: none;
@@ -90,7 +90,7 @@
 }
 
 .learn-more:hover {
-  background-color: #e91e63;
+  background-color: #bd0202;
 }
 
 .show-more-wrapper {
@@ -99,7 +99,7 @@
 }
 
 .show-more-btn {
-  background-color: #e91e63;
+  background-color: #595F72;
   color: #fff;
   padding: 10px 22px;
   border: none;
@@ -109,7 +109,7 @@
 }
 
 .show-more-btn:hover {
-  background-color: #43937D;
+  background-color: #bd0202;
 }
 
 /* === RESPONSIVE MEDIA QUERIES === */

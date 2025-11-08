@@ -1,7 +1,7 @@
 .preloader-bg {
   position: fixed;
   inset: 0;
-  background: linear-gradient(120deg, #19197080 0%, #43937D 80%);
+  background: linear-gradient(120deg, #563c5c 25%, #424755 50%,#595F72 100%);
   z-index: 9999;
   display: flex;
   align-items: center;

@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import Second from "./components/SecondSection";
-import Third from "./components/Thirdsec";
-import Four from "./components/Foursec";
-import Five from "./components/Fivesec";
-import Footnew from "./components/Footer";
+import Home from "./components/home";
+// import HeroSection from "./components/HeroSection";
+// import Second from "./components/SecondSection";
+// import Third from "./components/Thirdsec";
+// import Four from "./components/Foursec";
+// import Five from "./components/Fivesec";
+// import Footnew from "./components/Footer";
 import TermsPolicy from "./components/TermsPolicy";
 import About from "./components/About";
-import Digitalmarketingpg from "./components/Digitalmarketingpg";
-import InternetMarketingServices from "./components/InternetMarketingServices";
-import InternetMarketingStrategy from "./components/InternetMarketingStrategy";
+import WebDevelopment from "./components/WebDevelopment";
+// import Digitalmarketingpg from "./components/Digitalmarketingpg";
+// import InternetMarketingServices from "./components/InternetMarketingServices";
+// import InternetMarketingStrategy from "./components/InternetMarketingStrategy";
 import SeoService from "./components/SEOService";
-import ContentMarketingService from "./components/ContectMarketingServices";
-import SocialMediaMarketingService from "./components/SocialMediaMarketingServices";
-import WebDesignServices from "./components/webdesign";
+// import ContentMarketingService from "./components/ContectMarketingServices";
+// import SocialMediaMarketingService from "./components/SocialMediaMarketingServices";
+// import WebDesignServices from "./components/webdesign";
 import BrandingServices from "./components/Branding";
 import Contact from "./components/Contact";
 import Plans from "./components/Plans";
@@ -37,7 +39,7 @@ const App: React.FC = () => {
     // Simulate loading duration (adjust timing as needed or integrate with real loading state)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500);
+    }, 700);
 
     return () => clearTimeout(timer);
   }, [location]);
@@ -63,7 +65,7 @@ const App: React.FC = () => {
             notificationSound
           />
           <Routes>
-            <Route path="/" element={
+            {/* <Route path="/home" element={
               <>
                 <HeroSection />
                 <Second />
@@ -72,20 +74,22 @@ const App: React.FC = () => {
                 <Five />
                 <Footnew />
               </>
-            } />
+            } /> */}
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/digital-marketing/" element={<Digitalmarketingpg />} />
+            {/* <Route path="/digital-marketing/" element={<Digitalmarketingpg />} />
             <Route path="/digital-marketing/internet-marketing-services" element={<InternetMarketingServices />} />
-            <Route path="/digital-marketing/internet-marketing-strategy" element={<InternetMarketingStrategy />} />
-            <Route path="/digital-marketing/SEO-Service" element={<SeoService />} />
-            <Route path="/digital-marketing/Social-media-Service" element={<SocialMediaMarketingService />} />
+            <Route path="/digital-marketing/internet-marketing-strategy" element={<InternetMarketingStrategy />} /> */}
+            <Route path="/SEO-Service" element={<SeoService />} />
+            {/* <Route path="/digital-marketing/Social-media-Service" element={<SocialMediaMarketingService />} />
             <Route path="/digital-marketing/Content-Marketing-Service" element={<ContentMarketingService />} />
-            <Route path="/web-design" element={<WebDesignServices />} />
+            <Route path="/web-design-og" element={<WebDesignServices />} /> */}
             <Route path="/branding" element={<BrandingServices />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/plans" element={<Plans />} />
             <Route path="/terms-and-policy" element={<TermsPolicy />} />
             <Route path="/Websitegallery" element={<Websitegallery />} />
+            <Route path="/web-design" element={<WebDevelopment />} />
           </Routes>
         </>
       )}

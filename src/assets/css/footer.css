@@ -1,9 +1,17 @@
-/* === BASE STYLES === */
 .footer-001 {
-  background-color: #1c1c1c;
-  color: #ffffff;
+  background-color: #595F72;
+  color: #fff;
   padding: 50px 20px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-container-002 {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1.2fr 1.3fr;
+  gap: 60px;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .footer-001 ul {
@@ -12,81 +20,62 @@
   margin: 0;
 }
 
-.footer-container-001 {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
-  gap: 40px;
-  max-width: 1320px;
-  margin: 0 auto;
-  padding: 0 20px;
-  position: relative;
-  left: 100px; /* Adjust this value as needed */
-}
-
-.footer-col-001 h4 {
+/* Footer section headings */
+.footer-col-002 h4 {
   font-size: 22px;
-  margin-bottom: 10px;
-  color: #ffffff;
+  margin-bottom: 6px;
+  color: #fff;
+  position: relative;
+  display: inline-block; /* Shrink to content width */
+  cursor: pointer; /* Optional for hover effect */
 }
 
-.footer-col-001 p,
-.footer-col-001 a {
-  font-size: 18px;
+/* Underline below headings */
+.footer-heading-underline {
+  width: 60px;
+  height: 3px;
+  background-color: #DE3163;
+  margin: 10px auto 15px; /* Center underline */
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  transform: scaleX(1);
+}
+
+.footer-col-002 h4:hover + .footer-heading-underline {
+  transform: scaleX(1.2); /* Slight scale on hover for animation */
+}
+
+.footer-col-002 p,
+.footer-col-002 a {
+  font-size: 17px;
   color: #ccc;
   line-height: 1.6;
   text-decoration: none;
+  margin-bottom: 8px;
+  display: block;
 }
 
-.footer-col-001 a:hover {
+.footer-col-002 a:hover {
   color: #DE3163;
 }
 
-.footer-col-001 ul li {
-  margin-bottom: 8px;
-  font-size: 14px;
-  color: #ddd;
-  cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.footer-col-001 ul li:hover {
-  color: #fcfcfc;
-}
-
 .footer-connect {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  justify-content: center; /* Center social icons */
 }
 
-.footer-bottom-001 {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 13px;
-  color: #aaa;
-  border-top: 1px solid #333;
-  padding-top: 15px;
-}
-
-.logo-section {
-  margin-left: -40px;
-}
-
-.footer-col-001.footer-wide {
-  min-width: 250px;
-}
-
-/* === SOCIAL ICONS === */
 .social-icons i {
-  font-size: 28px;
-  margin-right: 14px;
+  font-size: 26px;
   transition: transform 0.3s ease;
+  margin-right: 20px;
 }
 
 .social-icons i:hover {
   transform: scale(1.2);
-  color: #ffffff;
+  color: #fff;
 }
 
 .linkedin-icon { color: #0077B5; }
@@ -94,79 +83,104 @@
 .facebook-icon { color: #1877F2; }
 .whatsapp-icon { color: #25D366; }
 
-/* === MEDIA QUERIES === */
+.footer-bottom-001 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 13px;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+}
 
-/* Medium screens (tablets) */
-@media (max-width: 1024px) {
-  .footer-container-001 {
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    gap: 30px;
+.logo-col {
+  margin: 0;
+  text-align: left;
+}
+
+.company-col,
+.services-col,
+.contact-col,
+.location-col {
+  text-align: left;
+}
+
+.contact-col {
+  width: 250px;
+}
+
+.company-col h4 {
+  text-decoration: underline 2px red solid;
+  text-underline-offset: 7px;
+}
+
+.services-col h4 {
+  text-decoration: underline 2px red solid;
+  text-underline-offset: 7px;
+}
+
+.contact-col h4 {
+  text-decoration: underline 2px red solid;
+  text-underline-offset: 7px;
+}
+
+.location-col h4 {
+  text-decoration: underline 2px red solid;
+  text-underline-offset: 7px;
+}
+
+iframe {
+  margin-top: 20px;
+}
+
+.footer-col-002 {
+    margin-left: 40px;
   }
 
-  .logo-section {
-    margin-left: 0;
-    text-align: center;
-  }
+/* Responsive styles */
 
-  .footer-connect {
-    justify-content: center;
-    flex-direction: row; /* Ensures inline on medium screens */
-    flex-wrap: wrap;
-  }
-
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .social-icons li {
-    margin: 0;
-  }
-
-  .social-icons i {
-    font-size: 26px;
-    margin: 0;
+@media (max-width: 1200px) {
+  .footer-container-002 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
   }
 }
 
-/* Small screens (mobiles) */
-@media (max-width: 600px) {
-  .footer-container-001 {
-    grid-template-columns: 1fr;
-    left: 10px;
+@media (max-width: 1024px) {
+  .footer-container-002 {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 40px;
   }
 
-  .footer-col-001 {
-    margin-bottom: 30px;
+  /* Center text on smaller screens */
+  .logo-col,
+  .company-col,
+  .services-col,
+  .contact-col,
+  .location-col {
+    text-align: center;
+  }
+  .contact-col {
+    margin-left: 50px;
+  }
+
+  
+}
+
+@media (max-width: 600px) {
+  .footer-container-002 {
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+    text-align: center;
   }
 
   iframe {
     width: 100% !important;
-    height: 200px;
+    height: 400px;
+    margin-top: 20px;
   }
 
-  .footer-connect {
-    justify-content: center;
-    flex-direction: row; /* Keeps them inline on mobile */
-    flex-wrap: wrap;
-  }
-
-  .social-icons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .social-icons li {
-    margin: 0;
-  }
-
-  .social-icons i {
-    font-size: 24px;
-    margin: 0;
+  .footer-bottom-001 {
+    font-size: 12px;
   }
 }

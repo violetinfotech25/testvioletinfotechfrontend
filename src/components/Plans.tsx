@@ -16,6 +16,7 @@ interface PlanCategory {
   tiers: Tier[];
   commonFeatures?: string[];
 }
+
 const plans: PlanCategory[] = [
   {
     category: 'Web Development',
@@ -29,36 +30,53 @@ const plans: PlanCategory[] = [
       {
         title: 'Standard',
         price: '₹24,999',
-        features: ['5 Pages Website', 'Dynamic Website', 'Responsive Design', 'Basic SEO', 'SEO Setup', 'Admin Panel', 'Hosting & Domain (1 Year)'],
+        features: [
+          '5 Pages Website',
+          'Dynamic Website',
+          'Responsive Design',
+          'Basic SEO',
+          'SEO Setup',
+          'Admin Panel',
+          'Hosting & Domain (1 Year)'
+        ],
         isPopular: true,
       },
       {
         title: 'Premium',
         price: '₹49,999',
-        features: ['Custom Design', 'Dynamic Website', 'Responsive Design', 'Basic SEO', 'Advanced SEO', 'CMS Integration', 'Speed Optimization', 'Ongoing Support'],
+        features: [
+          'Custom Design',
+          'Dynamic Website',
+          'Responsive Design',
+          'Basic SEO',
+          'Advanced SEO',
+          'CMS Integration',
+          'Speed Optimization',
+          'Ongoing Support'
+        ],
       },
     ],
   },
   {
-    category: 'Digital Marketing',
+    category: 'Branding & Marketing',
     commonFeatures: ['Monthly Report'],
     tiers: [
       {
         title: 'Basic',
         price: '₹4,999/month',
-        features: ['Social Media Setup', '2 Posts/Week'],
+        features: ['Logo Creation', '1 Banner Design'],
       },
       {
         title: 'Standard',
         price: '₹9,999/month',
-        features: ['3 Platforms (FB, IG, LinkedIn)', '5 Posts/Week', 'Ad Campaign Setup', 'Monthly Report'],
+        features: ['Logo Creation', '2 Banner Design', 'Visiting Card',],
         isPopular: true,
       },
       {
         title: 'Premium',
         price: '₹19,999/month',
-        features: ['5 Platforms', 'Daily Posting', 'Ad Optimization', 'Lead Generation Campaigns', 'Monthly Report'],
-      },
+        features: ['Logo Creation', '4 Banner Design', 'Visiting Card', 'Welcome Kit'],
+      }
     ],
   },
   {
@@ -89,26 +107,43 @@ const plans: PlanCategory[] = [
       {
         title: 'Full Package',
         price: '₹74,999',
-        features: ['Web Development (Premium)', 'Digital Marketing (Premium)', 'SEO (Premium)', 'Complete Branding'],
+        features: [
+          'Web Development (Premium)',
+          'Branding (Premium)',
+          'SEO (Premium)',
+          'Complete Branding'
+        ]
       },
       {
-        title: 'Marketing + Web Dev',
+        title: 'Branding + Web Dev',
         price: '₹59,999',
-        features: ['Web Development (Standard)', 'Digital Marketing (Standard)', 'Free SEO Setup'],
-        isPopular: true,
+        features: [
+          'Web Development (Standard)',
+          'Branding (Standard)',
+          'Free SEO Setup'
+        ],
+        isPopular: true
       },
       {
-        title: 'Marketing + SEO',
+        title: 'Branding + SEO',
         price: '₹39,999',
-        features: ['Digital Marketing (Standard)', 'SEO (Standard)', 'Free SEO Setup'],
+        features: [
+          'Branding (Standard)',
+          'SEO (Standard)',
+          'Free SEO Setup'
+        ]
       },
       {
         title: 'Web Dev + SEO',
         price: '₹29,999',
-        features: ['Web Development (Standard)', 'SEO (Standard)', 'Free SEO Setup'],
+        features: [
+          'Web Development (Standard)',
+          'SEO (Standard)',
+          'Free SEO Setup'
+        ],
       },
     ],
-  },
+  }
 ];
 
 const Plans: React.FC = () => {
@@ -116,7 +151,7 @@ const Plans: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('');
   const [showModal, setShowModal] = useState(false);
   const [selectedPlan, setSelectedPlan] = useState<{ category: string; title: string } | null>(null);
-  const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+  const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000/plancontact/";
 
   const headerOffset = 100;
 
@@ -148,16 +183,15 @@ const Plans: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
     const formData = new FormData(e.currentTarget);
     const data = {
-  first_name: formData.get('firstName'),
-  last_name: formData.get('lastName'),
-  phone: formData.get('phone'),
-  email: formData.get('email'),
-  selected_category: selectedPlan?.category,
-  selected_plan: selectedPlan?.title,
-};
+      first_name: formData.get('firstName'),
+      last_name: formData.get('lastName'),
+      phone: formData.get('phone'),
+      email: formData.get('email'),
+      selected_category: selectedPlan?.category,
+      selected_plan: selectedPlan?.title,
+    };
 
     try {
       const response = await fetch(`${API_URL}/plancontact/`, {

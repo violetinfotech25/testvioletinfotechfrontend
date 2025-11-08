@@ -72,18 +72,9 @@ const Branding: React.FC = () => {
     {
       title: 'Promotion Works',
       details: [
-        {
-          heading: 'What We Do',
-          content: 'We create and design promotional materials such as brochures, flyers, posters, and marketing kits that effectively communicate your brand message.',
-        },
-        {
-          heading: 'How We Do It',
-          content: 'Our team collaborates with you to understand your goals, designs eye-catching materials, and ensures quality prints with fast delivery.',
-        },
-        {
-          heading: 'What Will Happen',
-          content: 'Your brand visibility improves, audience engagement increases, and you stand out in the market with strong, consistent branding.',
-        },
+        { heading: 'What We Do', content: 'We create and design promotional materials such as brochures, flyers, posters, and marketing kits that effectively communicate your brand message.' },
+        { heading: 'How We Do It', content: 'Our team collaborates with you to understand your goals, designs eye-catching materials, and ensures quality prints with fast delivery.' },
+        { heading: 'What Will Happen', content: 'Your brand visibility improves, audience engagement increases, and you stand out in the market with strong, consistent branding.' },
       ],
       image: PromotionImg,
       gallery: [Gpromotion1, Gpromotion2, Gpromotion3, Gpromotion2, Gpromotion1],
@@ -91,18 +82,9 @@ const Branding: React.FC = () => {
     {
       title: 'Visiting Cards',
       details: [
-        {
-          heading: 'What We Do',
-          content: 'We design personalized and professional visiting cards tailored to your business personality and industry standards.',
-        },
-        {
-          heading: 'How We Do It',
-          content: 'Our design team creates multiple mockups based on your brand colors, fonts, and logo, and we finalize the best design for printing.',
-        },
-        {
-          heading: 'What Will Happen',
-          content: 'You make lasting impressions during networking, building trust and credibility with a standout visiting card.',
-        },
+        { heading: 'What We Do', content: 'We design personalized and professional visiting cards tailored to your business personality and industry standards.' },
+        { heading: 'How We Do It', content: 'Our design team creates multiple mockups based on your brand colors, fonts, and logo, and we finalize the best design for printing.' },
+        { heading: 'What Will Happen', content: 'You make lasting impressions during networking, building trust and credibility with a standout visiting card.' },
       ],
       image: VistingCard,
       gallery: [Vcard1, Vcard2, Vcard3, Vcard2, Vcard1, Vcard3],
@@ -110,18 +92,9 @@ const Branding: React.FC = () => {
     {
       title: 'Labeling',
       details: [
-        {
-          heading: 'What We Do',
-          content: 'We design product labels that are attractive, informative, and compliant with packaging regulations.',
-        },
-        {
-          heading: 'How We Do It',
-          content: 'We study your product, identify your branding needs, and create a label design that aligns with your product identity.',
-        },
-        {
-          heading: 'What Will Happen',
-          content: 'Your product gains shelf appeal and customer trust, leading to increased sales and brand recall.',
-        },
+        { heading: 'What We Do', content: 'We design product labels that are attractive, informative, and compliant with packaging regulations.' },
+        { heading: 'How We Do It', content: 'We study your product, identify your branding needs, and create a label design that aligns with your product identity.' },
+        { heading: 'What Will Happen', content: 'Your product gains shelf appeal and customer trust, leading to increased sales and brand recall.' },
       ],
       image: Label,
       gallery: [Label1, Label2, Label3, Label2, Label1, Label3],
@@ -129,18 +102,9 @@ const Branding: React.FC = () => {
     {
       title: 'Welcome Pack',
       details: [
-        {
-          heading: 'What We Do',
-          content: 'We create promotional welcome kit for company use, suitable for events, exhibitions, and store promotions.',
-        },
-        {
-          heading: 'How We Do It',
-          content: 'We use high-resolution images, bold typography, and durable materials to design and print meterials that grab attention.',
-        },
-        {
-          heading: 'What Will Happen',
-          content: 'Your message will be clearly communicated to a large audience, boosting your employees and engagement.',
-        },
+        { heading: 'What We Do', content: 'We create promotional welcome kit for company use, suitable for events, exhibitions, and store promotions.' },
+        { heading: 'How We Do It', content: 'We use high-resolution images, bold typography, and durable materials to design and print materials that grab attention.' },
+        { heading: 'What Will Happen', content: 'Your message will be clearly communicated to a large audience, boosting your employees and engagement.' },
       ],
       image: welcome2,
       gallery: [welcome1, welcome2, welcome1, welcome1, welcome1, welcome1],
@@ -148,18 +112,9 @@ const Branding: React.FC = () => {
     {
       title: 'Banners',
       details: [
-        {
-          heading: 'What We Do',
-          content: 'We create promotional banners for indoor and outdoor use, suitable for events, exhibitions, and store promotions.',
-        },
-        {
-          heading: 'How We Do It',
-          content: 'We use high-resolution images, bold typography, and durable materials to design and print banners that grab attention.',
-        },
-        {
-          heading: 'What Will Happen',
-          content: 'Your message will be clearly communicated to a large audience, boosting and engagement.',
-        },
+        { heading: 'What We Do', content: 'We create promotional banners for indoor and outdoor use, suitable for events, exhibitions, and store promotions.' },
+        { heading: 'How We Do It', content: 'We use high-resolution images, bold typography, and durable materials to design and print banners that grab attention.' },
+        { heading: 'What Will Happen', content: 'Your message will be clearly communicated to a large audience, boosting and engagement.' },
       ],
       image: banner4,
       gallery: [banner1, banner2, banner3, banner3, banner4, banner2],
@@ -169,12 +124,12 @@ const Branding: React.FC = () => {
   return (
     <>
       <div className="branding-page">
-        <h1 className="branding-heading" data-aos="fade-down">Our Branding Services</h1>
-        {sections.map((section, index) => (
+        <h1 className="branding-heading" data-aos="fade-up">Our Branding Services</h1>
+        {sections.map(section => (
           <section
-            className={`branding-section ${index % 2 === 0 ? 'left' : 'right'}`}
+            className="branding-section"
             key={section.title}
-            data-aos={index % 2 === 0 ? 'fade-right' : 'fade-left'}
+            data-aos="fade-up"
           >
             <div className="branding-image">
               <img src={section.image} alt={section.title} />
@@ -193,36 +148,6 @@ const Branding: React.FC = () => {
         ))}
       </div>
 
-      <div className="container-fluid my-5 branding-gallery-container">
-        <h2 className="gallery-main-heading text-center" data-aos="fade-up">Branding Gallery</h2>
-        {sections.map((section, index) => (
-          <div className="my-5 section-gap" key={index}>
-            <h3 className="gallery-title text-center mb-4">{section.title}</h3>
-            <div id={`carousel-${index}`} className="carousel slide carousel-fade" data-bs-ride="carousel">
-              <div className="carousel-inner">
-                {Array.from({ length: Math.ceil(section.gallery.length / 3) }, (_, slideIndex) => (
-                  <div className={`carousel-item ${slideIndex === 0 ? 'active' : ''}`} key={slideIndex}>
-                    <div className="row">
-                      {section.gallery.slice(slideIndex * 3, slideIndex * 3 + 3).map((img, i) => (
-                        <div className="col-md-4" key={i}>
-                          <img src={img} className="d-block w-100 img-fluid" alt={`Gallery ${i}`} />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <button className="carousel-control-prev" type="button" data-bs-target={`#carousel-${index}`} data-bs-slide="prev">
-                <span className="carousel-control-prev-icon"></span>
-              </button>
-              <button className="carousel-control-next" type="button" data-bs-target={`#carousel-${index}`} data-bs-slide="next">
-                <span className="carousel-control-next-icon"></span>
-              </button>
-            </div>
-          </div>
-        ))}
-      </div>
-
       <section className="branding-contact" data-aos="fade-up">
         <div className="container">
           <h2>Get Your Design</h2>
@@ -233,7 +158,7 @@ const Branding: React.FC = () => {
 
       {showModal && (
         <div className="modal-overlay">
-          <div className="modal-content" data-aos="zoom-in">
+          <div className="modal-content" data-aos="fade-up">
             <button className="modal-close" onClick={handleCloseModal}>×</button>
             <h2 className="modal-title">Request Service: {selectedService}</h2>
             <form onSubmit={handleSubmit} className="modal-form">

@@ -17,7 +17,7 @@
 .contact-left h1 {
   font-size: 2.2rem;
   margin-bottom: 10px;
-  color: #419982;
+  color: #563c5c;
   font-weight: 700;
 }
 
@@ -35,7 +35,7 @@
 }
 
 .contact-info i {
-  color: #000000;
+  color: #46324b;
   min-width: 20px;
 }
 
@@ -43,7 +43,7 @@
   margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
-  color: #419982;
+  color: #563c5c;
 }
 
 .contact-social-buttons {
@@ -75,7 +75,7 @@
 .contact-form {
   flex: 1;
   min-width: 300px;
-  background: #43937e75;
+  background: #595f7246;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
@@ -100,6 +100,7 @@
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 14px;
+  box-sizing: border-box;
 }
 
 .contact-form textarea {
@@ -108,7 +109,7 @@
 
 .submit-button {
   padding: 12px 24px;
-  background: #3d9b82;
+  background: #563c5c;
   color: #fff;
   font-weight: bold;
   border: none;
@@ -119,5 +120,32 @@
 }
 
 .submit-button:hover {
-  background: #43937ed0;
+  background: #46324b;
+}
+
+.submit-image {
+  display: block;
+  margin: 16px auto 0; /* space above image and center alignment */
+  max-width: 900px; /* control max size */
+  width: 100%;
+  border-radius: 8px;
+  max-height: 200px;
+  height: 100%;
+}
+
+/* Responsive Fixes for Mobile */
+@media (max-width: 600px) {
+  .contact-form form .form-row {
+    flex-direction: column; /* stack inputs vertically */
+  }
+
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    width: 100%; /* full width on small screens */
+  }
+
+  .contact-form select {
+    padding: 8px; /* reduce padding for better fit */
+  }
 }

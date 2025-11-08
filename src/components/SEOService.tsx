@@ -101,30 +101,30 @@ const SEOService: React.FC = () => {
       content: 'We help you develop a results-driven SEO strategy tailored to your business goals. Our experts analyze your website, industry, and competition to identify the best keywords and content opportunities. You’ll receive a clear, step-by-step roadmap to boost search rankings and drive traffic. We also guide you in avoiding common SEO pitfalls. With personalized, expert advice, we’ll position your business for long-term success online.',
     }
   ];
-  const faqs = [
-  {
-    question: 'WHAT IS DIGITAL MARKETING?',
-    answer: `Digital marketing encompasses all aspects and activities of marketing an organization, business, or brand across digital channels on the internet. Digital marketing strategies and tactics are crafted to target specific online audiences across a variety of internet-connected devices.
+//   const faqs = [
+//   {
+//     question: 'WHAT IS DIGITAL MARKETING?',
+//     answer: `Digital marketing encompasses all aspects and activities of marketing an organization, business, or brand across digital channels on the internet. Digital marketing strategies and tactics are crafted to target specific online audiences across a variety of internet-connected devices.
 
-Digital marketing includes optimization across search engines (the likes of Google and Bing), visibility and engagement on social media platforms, email marketing communications, website design and development and integrated applications to connect and engage with prospects and customers.`
-  },
-  {
-    question: 'WHAT DOES A DIGITAL MARKETER DO?',
-    answer: `A digital marketer develops strategies to build a brand’s presence online. They manage SEO, paid ads, social media, and content to drive traffic and leads.`
-  },
-  {
-    question: 'WOULD MY BUSINESS BENEFIT FROM DIGITAL MARKETING SERVICES?',
-    answer: `Yes. Whether you’re a small business or a large enterprise, digital marketing helps you reach your target audience effectively and affordably.`
-  },
-  {
-    question: 'HOW COST-EFFECTIVE IS DIGITAL MARKETING COMPARED WITH TRADITIONAL MARKETING?',
-    answer: `Digital marketing is generally more cost-effective. You can track your ROI more easily and scale campaigns based on performance and budget.`
-  },
-  {
-    question: 'HOW DO YOU IDENTIFY A SUCCESSFUL DIGITAL MARKETING COMPANY?',
-    answer: `Look for proven results, client testimonials, transparent reporting, and a deep understanding of your industry and audience.`
-  },
-];
+// Digital marketing includes optimization across search engines (the likes of Google and Bing), visibility and engagement on social media platforms, email marketing communications, website design and development and integrated applications to connect and engage with prospects and customers.`
+//   },
+//   {
+//     question: 'WHAT DOES A DIGITAL MARKETER DO?',
+//     answer: `A digital marketer develops strategies to build a brand’s presence online. They manage SEO, paid ads, social media, and content to drive traffic and leads.`
+//   },
+//   {
+//     question: 'WOULD MY BUSINESS BENEFIT FROM DIGITAL MARKETING SERVICES?',
+//     answer: `Yes. Whether you’re a small business or a large enterprise, digital marketing helps you reach your target audience effectively and affordably.`
+//   },
+//   {
+//     question: 'HOW COST-EFFECTIVE IS DIGITAL MARKETING COMPARED WITH TRADITIONAL MARKETING?',
+//     answer: `Digital marketing is generally more cost-effective. You can track your ROI more easily and scale campaigns based on performance and budget.`
+//   },
+//   {
+//     question: 'HOW DO YOU IDENTIFY A SUCCESSFUL DIGITAL MARKETING COMPANY?',
+//     answer: `Look for proven results, client testimonials, transparent reporting, and a deep understanding of your industry and audience.`
+//   },
+// ];
 
 const [modalOpen, setModalOpen] = useState(false);
 const [modalTitle, setModalTitle] = useState('');
@@ -204,39 +204,46 @@ const handleSubmit = async (e: React.FormEvent) => {
     <>
       {/* === New Banner Section === */}
       <section className="seo-company-banner">
-        <div className="seo-company-wrapper">
-          <div className="seo-company-text">
-            <h2>Search Engine Optimization Services</h2>
-            <p>
-              Let’s face it. You know what you need but you just don’t know how to get it.
-              Our SEO specialists hear that over and over from SEO clients who contact Thrive Internet Marketing Agency.
-            </p>
-            <p>You’re likely here because of one or more of the following reasons:</p>
-            <ul>
-              <li>🌿 Your website isn’t being found online.</li>
-              <li>🌿 Your website traffic has diminished recently and you don’t know why.</li>
-              <li>🌿 Suddenly, your volume of incoming calls and leads has declined.</li>
-              <li>🌿 You’re starting a new website and want to ramp up new business quickly.</li>
-            </ul>
-            <p>
-              If any of these four pain points ring a bell, rest assured that you’ve come to the right SEO marketing company.
-              There’s a reason our search engine optimization agency is currently serving hundreds of clients and providing
-              professional SEO services to answer Google’s ever-changing algorithm.
-            </p>
-            <button className="seo-banner-button" onClick={() => openModal("Schedule a Call")}>SCHEDULE A CALL</button>
-          </div>
-          <div className="seo-company-image">
-            <img src={womanImage} alt="SEO Consultant" />
-            <div className="seo-company-icon green">📈</div>
-            <div className="seo-company-icon orange">📊</div>
-          </div>
-        </div>
-      </section>
+  <h2 className="seo-company-title">Search Engine Optimization Services</h2>
+  <div className="seo-company-wrapper">
+    <div className="seo-company-text">
+      <p>
+        Let’s face it. You know what you need but you just don’t know how to get it.
+        Our SEO specialists hear that over and over from SEO clients who contact Thrive Internet Marketing Agency.
+      </p>
+      <p>You’re likely here because of one or more of the following reasons:</p>
+      <ul>
+        <li>🌿 Your website isn’t being found online.</li>
+        <li>🌿 Your website traffic has diminished recently and you don’t know why.</li>
+        <li>🌿 Suddenly, your volume of incoming calls and leads has declined.</li>
+        <li>🌿 You’re starting a new website and want to ramp up new business quickly.</li>
+      </ul>
+      <p>
+        If any of these four pain points ring a bell, rest assured that you’ve come to the right SEO marketing company.
+        There’s a reason our search engine optimization agency is currently serving hundreds of clients and providing
+        professional SEO services to answer Google’s ever-changing algorithm.
+      </p>
+      <button
+        className="seo-banner-button"
+        onClick={() => openModal("Schedule a Call")}
+      >
+        SCHEDULE A CALL
+      </button>
+    </div>
+
+    <div className="seo-company-image">
+      <img src={womanImage} alt="SEO Consultant" />
+      <div className="seo-company-icon green">📈</div>
+      <div className="seo-company-icon orange">📊</div>
+    </div>
+  </div>
+</section>
+
 
       {/* === Existing Cards Section === */}
       <div className="seo-container">
         <h1 className="seo-title" data-aos="fade-up">
-          🚀 Search Engine Optimization (SEO) Services
+          Search Engine Optimization (SEO) Services
         </h1>
         <p className="seo-subtitle" data-aos="fade-up">
           Maximize your online visibility and attract high-quality leads with modern SEO strategies tailored for success.
@@ -276,77 +283,73 @@ const handleSubmit = async (e: React.FormEvent) => {
       </section>
 
       {/* === New Banner Section === */}
-      <section className="seo-company-banner">
-        <div className="seo-company-box blue-box" data-aos="fade-up">
-          <h3><FaUserSecret /> Experience Matters</h3>
-          <p>
-            At Violet Infotech, we help businesses from all industries grow their online presence and increase revenue.
-Our SEO experts focus on delivering real results by improving your website traffic and lead generation.
-We support businesses of all sizes with strategies tailored to their goals.
-Our team stays up to date with the latest SEO trends and tools.
-We work together to solve problems quickly and effectively.
-With a collaborative and client-first approach, we make sure you get the best support.
-Choose Violet Infotech to boost your visibility and grow your business online.
-          </p>
-        </div>
+      <section className="seo-expertise-section">
+  <div className="expertise-box expertise-blue" data-aos="fade-up">
+    <h3><FaUserSecret /> Experience Matters</h3>
+    <p>
+      At Violet Infotech, we help businesses from all industries grow their online presence and increase revenue.
+      Our SEO experts focus on delivering real results by improving your website traffic and lead generation.
+      We support businesses of all sizes with strategies tailored to their goals. Our team stays up to date
+      with the latest SEO trends and tools. We work together to solve problems quickly and effectively.
+      With a collaborative and client-first approach, we make sure you get the best support. Choose
+      Violet Infotech to boost your visibility and grow your business online.
+    </p>
+  </div>
 
-        <div className="seo-company-box sky-box" data-aos="fade-up">
-          <h3><FaLaptopCode /> Dedicated SEO Professionals</h3>
-          <p>
-            We believe our job is to make a technical, complicated and sometimes overwhelming search
-            engine optimization process as simple as possible for our clients. One of the many ways our
-            online SEO company accomplishes this is by providing each client with a single point of
-            contact to manage your project. You get to know your Thrive SEO professional well and they
-            will get to know your business and unique needs.
-          </p>
-        </div>
+  <div className="expertise-box expertise-sky" data-aos="fade-up">
+    <h3><FaLaptopCode /> Dedicated SEO Professionals</h3>
+    <p>
+      Our dedicated SEO professionals are your strategic partners in mastering search engine visibility.
+      We combine deep technical expertise with data-driven content strategies to systematically improve your rankings and attract high-value organic traffic.
+      Our team stays ahead of algorithm updates and competitive trends, ensuring your website not only ranks higher but also converts visitors into loyal customers.
+      We believe in transparent collaboration and provide clear, actionable reporting so you see the tangible results of our partnership.
+    </p>
+  </div>
 
-        <div className="seo-company-box teal-box" data-aos="fade-up">
-          <h3><FaSearch /> Relationships & Results</h3>
-          <p>
-            We live by our two primary core values: Relationships and Results. We’re here for every client,
-            that’s our pillar. We have SEO experts who specialize in helping businesses of all sizes —
-            from small businesses to large, national franchises — achieve exponential growth. Our SEO agency
-            believes in owning the voice of our clients and work hard every day to prove it.
-          </p>
-        </div>
+  <div className="expertise-box expertise-teal" data-aos="fade-up">
+    <h3><FaSearch /> Relationships & Results</h3>
+    <p>
+     At the heart of our SEO philosophy lies an unwavering commitment to two principles: Relationships and Results. 
+     We believe that sustainable digital growth is not achieved through technical maneuvers alone, but through authentic, collaborative partnerships built on trust and transparency.
+     Our team integrates deeply with your business goals, functioning as an extension of your own, to craft SEO strategies that deliver measurable, exponential growth.
+    </p>
+  </div>
 
-        <div className="seo-company-box green-box" data-aos="fade-up">
-          <h3><FaChartLine /> We’re Always Getting Better</h3>
-          <p>
-            SEO is never stagnant and neither are we. SEO is always changing because of multiple Google
-            algorithm updates each year that impact ranking factors and we are always on top of the latest
-            news and trends. Our search engine optimization agency is constantly learning new techniques and
-            staying up-to-date to remain ahead of the curve. Rest assured, our SEO company is proactive and
-            not reactive.
-          </p>
-        </div>
+  <div className="expertise-box expertise-green" data-aos="fade-up">
+    <h3><FaChartLine /> Always Improving</h3>
+    <p>
+      In the dynamic world of SEO, stagnation means falling behind. Google's algorithm is in a constant state of evolution and what worked yesterday may not work tomorrow.
+      That's why a proactive, "Always Improving" mindset is core to our agency's DNA.
+      We don't just react to updates; we anticipate them. Our team is dedicated to continuous learning, actively participating in industry forums, testing new strategies and dissecting algorithm shifts to understand their implications.
+    </p>
+  </div>
 
-        <div className="seo-company-box orange-box" data-aos="fade-up">
-          <h3><FaFileAlt /> We Play Fair</h3>
-          <p>
-            We value honesty and integrity in everything we do. We always play fair, implementing white hat
-            SEO optimization services to drive results without spamming or gaming the system that can lead
-            to possible Google penalties. Simply put: We don’t have to cheat to win in SEO. As a Google
-            Premier Partner, we play by the rules and never jeopardize your business in any way. We never
-            compromise our integrity.
-          </p>
-        </div>
+  <div className="expertise-box expertise-orange" data-aos="fade-up">
+    <h3><FaFileAlt /> Ethical SEO Practices</h3>
+    <p>
+      In an industry often tempted by shortcuts, we stand firm in our commitment to Ethical SEO Practices.
+      We exclusively employ honest, "white-hat" techniques that fully comply with Google's Webmaster Guidelines.
+      This means we build your online authority through legitimate quality content, earned backlinks and technical excellence—never through deceptive link schemes, keyword stuffing, or cloaking that put your site at risk.
+      As your trusted SEO partner, our priority is to safeguard your business's long-term reputation and sustainable growth.
+    </p>
+  </div>
 
-        <div className="seo-company-box yellow-box" data-aos="fade-up">
-          <h3><FaExternalLinkAlt /> Transparent Reporting</h3>
-          <p>
-            While our competitors use smoke and mirrors, we maintain full transparency so you can see
-            first-hand how our efforts are increasing your online revenue. Our custom, in-depth reporting
-            includes Google Analytics reports to give you a full overview of your site’s SEO performance,
-            regularly updated keyword rankings and a monthly breakdown of the SEO tasks we’ve performed.
-            We can also provide monthly video summaries reviewing the SEO improvements and strategy.
-          </p>
-        </div>
-      </section>
+  <div className="expertise-box expertise-yellow" data-aos="fade-up">
+    <h3><FaExternalLinkAlt /> Transparent Reporting</h3>
+    <p>
+      We believe that clarity and honesty are the cornerstones of a successful partnership. That's why our commitment to Transparent Reporting is absolute.
+      You will never be left in the dark about your campaign's performance.
+      We provide you with clear, comprehensive, and data-driven reports that break down complex metrics into actionable insights.
+      Our monthly summaries go beyond just tracking rankings; they offer a holistic view of your progress, including in-depth analytics on organic traffic growth, user behavior, keyword performance for both visibility and conversions and the overall return on your investment.
+    </p>
+  </div>
+</section>
+
+
+
       <section className="seo-methodology">
   <div className="methodology-header">
-    <button className="methodology-button" onClick={() => openModal("Let's Talk")}>LET’S TALK</button>
+    <button className="methodology-button" onClick={() => openModal("Let's Talk")}>LET'S TALK</button>
     <h2>SEO Methodology</h2>
     <p>Your First Step Towards Digital Success</p>
   </div>
@@ -379,7 +382,7 @@ Choose Violet Infotech to boost your visibility and grow your business online.
     ))}
   </div>
 </section>
-    <section className="faq-section">
+    {/* <section className="faq-section">
       <h2 className="faq-title">Digital Marketing Services FAQs</h2>
       <div className="faq-container">
         {faqs.map((faq, index) => (
@@ -399,7 +402,7 @@ Choose Violet Infotech to boost your visibility and grow your business online.
           </div>
         ))}
       </div>
-    </section>
+    </section> */}
     {modalOpen && (
   <div className="modal-overlay" onClick={closeModal}>
     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
@@ -432,6 +435,15 @@ Choose Violet Infotech to boost your visibility and grow your business online.
     </div>
   </div>
 )}
+<section className="seo-cta-section" data-aos="fade-up">
+  <div className="seo-cta-content">
+    <h2>Ready to Boost Your Online Presence?</h2>
+    <p>Contact us today and let our SEO experts help grow your business with proven strategies and personalized solutions.</p>
+    <button className="seo-cta-button" onClick={() => openModal("Schedule a Call")}>
+      Schedule a Call
+    </button>
+  </div>
+</section>
 <Footer />
     </>
   );

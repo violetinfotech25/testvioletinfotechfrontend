@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import Footerend from '../components/Footer';
+import Footer from '../components/Footer';
 import '../assets/css/contact.css';
+import Contactbnr from "../assets/image/contact/web-development.png";
 
 const Contact: React.FC = () => {
-  const API_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/contactuspg/";
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -109,11 +110,12 @@ const Contact: React.FC = () => {
               <textarea name="message" rows={5} value={formData.message} onChange={handleChange} placeholder="Your Message" required />
             </div>
             <button type="submit" className="submit-button">Send Message</button>
+            <img src={Contactbnr} alt="Thank you"className="submit-image"/>
           </form>
         </div>
       </div>
 
-      <Footerend />
+      <Footer />
     </>
   );
 };

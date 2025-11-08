@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   text-decoration: none;
+  margin-left: 0;
 }
 
 .navbar-brand img {
@@ -20,19 +21,34 @@
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #43937D !important;
+  background-color: #595F72 !important;
   color: #ffffff;
   padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 1px 3px #ffffff;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo margin for desktops */
+@media screen and (min-width: 992px) {
+  .navbar-brand {
+    margin-left: 100px;
+  }
 }
 
 /* Navigation links */
 .navbar-nav {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  gap: 70px;
-  font-weight: 700;
+  gap: 30px;
+  font-weight: 300;
   font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   flex: 1;
 }
@@ -48,55 +64,38 @@
 .navbar-nav .nav-link::after {
   content: '';
   position: absolute;
-  height: 2px;
-  background: #c71c2c;
+  height: 3px;
+  background: #c20000;
   width: 100%;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
-.navbar-nav .nav-link::before {
-  top: 0;
-  left: 0;
-  transform-origin: left;
-}
-
-.navbar-nav .nav-link::after {
-  bottom: 0;
-  left: 0;
-  transform-origin: right;
-}
+.navbar-nav .nav-link::before { top: 0; left: 0; transform-origin: left; }
+.navbar-nav .nav-link::after { bottom: 0; left: 0; transform-origin: right; }
 
 .navbar-nav .nav-link:hover::before,
 .navbar-nav .nav-link:hover::after {
   transform: scaleX(1);
 }
 
-/* Dropdown Menu */
-.dropdown-menu {
-  background-color: #43937D;
-  border: none;
-  border-radius: 0 0 6px 6px;
-  min-width: 200px;
-  padding: 0;
-  z-index: 999;
-  font-size: 20px;
+.navbar-nav .nav-link.active::before,
+.navbar-nav .nav-link.active::after {
+  transform: scaleX(1);
 }
 
-.dropdown-item {
-  padding: 10px 20px;
-  border-bottom: 1px solid #333;
-  color: #eee;
-  text-align: center;
-  background-color: transparent;
+/* Active colors */
+.navbar-nav .nav-link.active {
+  color: #ffffff !important;
 }
 
-.dropdown-item:hover {
-  background-color: #c71c2c;
-  color: #fff;
+/* Contact button active state */
+.contact-btn.active {
+  background: #b7154a;
+  box-shadow: 0 4px 12px rgba(183, 21, 74, 0.6);
 }
 
-/* Contact button inside navbar */
+/* Contact button */
 .contact-btn {
   background: #e91e63;
   border: none;
@@ -112,27 +111,80 @@
   background: #e91e62cc;
 }
 
-/* Navbar toggler icon (hamburger) */
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #595F72;
+  border: none;
+  border-radius: 0 0 6px 6px;
+  min-width: 200px;
+  padding: 0;
+  z-index: 999;
+  font-size: 20px;
+  display: none; /* Start hidden */
+}
+
+/* Desktop: show dropdown menu on hover */
+@media (min-width: 992px) {
+  .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .nav-item.dropdown:hover > .nav-link {
+    color: #fff;
+    background-color: transparent;
+  }
+}
+
+/* Mobile: show dropdown menu when .show */
+@media (max-width: 991px) {
+  .dropdown-menu.show {
+    display: block !important;
+  }
+  /* Collapse nav changes */
+  .container-fluid {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-collapse {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .navbar-nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #595F72;
+    padding: 10px;
+    gap: 20px;
+  }
+  .contact-btn {
+    display: inline-block;
+    align-self: flex-start;
+  }
+}
+
+/* Dropdown items */
+.dropdown-item {
+  padding: 10px 20px;
+  border-bottom: 1px solid #333;
+  color: #eee;
+  text-align: center;
+  background-color: transparent;
+}
+
+.dropdown-item:hover {
+  background-color: #c71c2c;
+  color: #fff;
+}
+
+/* Navbar toggler style */
 .navbar-toggler {
   border: none;
   background: none;
+  color: white;
 }
 
 .navbar-toggler-icon {
   filter: brightness(100);
-}
-
-/* Responsive Rules */
-@media screen and (max-width: 991px) {
-  .navbar-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    background-color: #43937D;
-    padding: 10px;
-    gap: 20px;
-  }
-
-  .contact-btn {
-    display: none;
-  }
 }
