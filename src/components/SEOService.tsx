@@ -275,7 +275,7 @@ const handleSubmit = async (e: React.FormEvent) => {
       {/* === Top Gradient Banner Section === */}
       <section className="seo-top-intro">
         <div className="seo-top-content">
-          <h1 className="seo-top-heading">Why Thrive’s SEO Services Are Better Than the Rest</h1>
+          <h1 className="seo-top-heading">Why Violet Infotech SEO Services Are Better Than the Rest</h1>
           <p className="seo-top-subheading">
             Our SEO Solutions Work: We’ve Proven it Over and Over Again
           </p>
